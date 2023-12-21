@@ -11,7 +11,132 @@
     }
 }
 
-.section-articles{
+.section-articels{
     margin-top: 120px;
+
+
+    .articles-centrale{
+
+        article{
+            
+            .article-header{
+                margin-bottom: 50px;
+                
+                .catalogue{
+                    background-color: #ff0303;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                }
+    
+                h2{
+                    font-weight: lighter;
+                    font-size: 27px;
+                }
+    
+                .date{
+                    color: #999999;
+                    font-size: 18px;
+                }
+            }
+
+            .article-main{
+                margin-bottom: 40px;
+
+                .container-hidden{
+                    overflow: hidden;
+                    margin-bottom: 60px;
+    
+                    .scale{
+                        transition: 0.4s all ease-in-out;
+
+                        &:hover{
+                            transition: 0.4s all ease-in-out;
+                            transform: scale(1.2);
+                        }
+    
+                    }
+                }
+
+                .txt-article{
+                    color: #999999;
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+            }
+
+            .article-footer{
+                display: flex;
+                flex-direction: column;
+                row-gap: 40px;
+                margin-bottom: 100px;
+                
+                .btn-reading{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border: 1px solid #000;
+                    color: #000;
+                    text-transform: uppercase;
+                    width: 230px;
+                    height: 60px;
+                    transition: .3s all ease-in-out;
+
+                    span{
+
+                        svg{
+
+                            path{
+                                transition: .3s all ease-in-out;
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        transition: .3s all ease-in-out;
+                        color: #ff0303;
+                        border: 1px solid #ff0303;
+
+                        span{
+                            transition: .3s all ease-in-out;
+
+                            svg{
+
+                                path{
+                                    fill: #ff0303;
+                                    transition: .3s all ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .icon-social{
+                    display: flex;
+                    width: 160px;
+                    justify-content: space-evenly;
+
+                    a{
+                        svg{
+                            width: 25px;
+                            height: 25px;
+                            fill: #999;
+                            transition: .3s all ease-in-out;
+                        }
+                        
+                        &:hover{
+
+                            svg{
+                                fill: #ff0303;
+                                transition: .3s all ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
 }
 

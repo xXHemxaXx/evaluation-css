@@ -1,15 +1,29 @@
 nav{
     .top-header{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 100%;
+
+        img[alt="logo"]{
+            margin-top: 20px;
+            width: 200px;
+            height: 20px;
+        }
 
         @include media-min($tablet) {
             display: flex;
+            flex-direction: row;
             align-items: center;
-            justify-content: center;
             justify-content: space-between;
             margin-top: 50px;
             margin-bottom: 40px;
 
-            img{
+            img[alt="logo"]{
+                margin: 0;
+            }
+
+            img[alt="Your add here"]{
                 width: 450px;
             }
 
@@ -17,19 +31,9 @@ nav{
 
         @include media-min($desktop) {
 
-            img{
+            img[alt="Your add here"]{
                 width: 600px;
                 height: 80px;
-            }
-        }
-
-        h1{
-            text-transform: uppercase;
-            color: #000;
-            font-size: 30px;
-
-            span{
-                color: #b9b9b9;
             }
         }
     }
