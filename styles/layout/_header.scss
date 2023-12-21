@@ -1,0 +1,107 @@
+nav{
+    .top-header{
+
+        @include media-min($tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-bottom: 40px;
+
+            img{
+                width: 450px;
+            }
+
+        }
+
+        @include media-min($desktop) {
+
+            img{
+                width: 600px;
+                height: 80px;
+            }
+        }
+
+        h1{
+            text-transform: uppercase;
+            color: #000;
+            font-size: 30px;
+
+            span{
+                color: #b9b9b9;
+            }
+        }
+    }
+    
+    hr{
+        color: #e4e4e4;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .bottom-header{
+        .menu-mobile{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 120px;
+            height: 40px;
+            background-color: #ff0303;
+            border-radius: 10px;
+
+            @include media-min($desktop) {
+                display: none;
+            }
+
+            h2{
+                color: #fff;
+            }
+
+            .menu-burger{
+                width: 20px;
+
+                div:nth-child(2){
+                    margin: 2px 0;
+                }
+                
+                div{
+                    border: 2px solid #fff;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+        .menu-desktop{
+            display: none;
+            
+            @include media-min($desktop) {
+                display: contents;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                .link{
+                    text-transform: uppercase;
+                    width: 580px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a{
+                        color: #000;
+                    }
+                }
+
+                .find{
+                    svg{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,2 +1,17 @@
+.wrapper{
+    width: 540px;
+    margin: 0 auto;
 
+    @include media-min($tablet) {
+        width: 690px;
+    }
+
+    @include media-min($desktop) {
+        width: 930px;
+    }
+}
+
+.section-articles{
+    margin-top: 120px;
+}
 
