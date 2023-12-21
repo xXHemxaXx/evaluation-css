@@ -1,0 +1,28 @@
+// TRANSITION
+
+@mixin transition($duree : .3s, $effet : ease-in-out){
+    transition: $duree all $effet; 
+}
+// -------------------------------------------------------------
+// MEDIA QUERIES
+
+@mixin media-min($_min-width) {
+    @media screen and (min-width: $_min-width) {
+      &{ @content; }
+    }
+}
+
+// Exemple:
+ 
+//   #content {
+//     width: 100%;
+//     margin: 0 auto;
+  
+//     @include media-min(768px) {
+//       width: 668px;
+//     }
+//     @include media-min($desktop) {
+//       width: 1024px;
+//     }
+// }
+// -------------------------------------------------------------
